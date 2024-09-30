@@ -45,7 +45,7 @@ button{
     border-radius: 3px;
     margin-left: 5px;
 }
-header ul{
+.menu{
     background: rgba(255,0,0,0.7);
     list-style: none;
     position: absolute;
@@ -53,12 +53,12 @@ header ul{
     left:0;
     right:0;
 }
-ul::after{
+.menu::after{
     content:'';
     clear: both;
     display: table;
 }
-ul li {
+.header>.menu>li {
     float:left;
 }
 
