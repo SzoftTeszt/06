@@ -40,7 +40,7 @@ p{
 button{
     background-color: yellow;
     color: black;
-    padding:3px 10px;
+    padding:5px 10px;
     border:none;
     border-radius: 3px;
     margin-left: 5px;
@@ -66,7 +66,30 @@ a{
     padding: 20px;
     display: inline-block;
     text-decoration: none;
+    color:white;   
+    
+}
+.has-submenu{
+    position: relative;
+}
+.has-submenu::after{
+    content:'ˇ';
     color:white;
-    
-    
+    position:absolute;
+    top:23px;
+    right:10px;
+
+}
+.submenu{
+    position: absolute;
+    width:250px;
+    /* background-color: red; */
+    background: rgba(255,0,0,0.9);
+    display: none;
+}
+.has-submenu:hover .submenu{
+    display: block;
+}
+.has-submenu a{
+    padding-right: 30px;
 }
